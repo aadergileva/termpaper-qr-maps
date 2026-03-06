@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Казань как географический объект</title>
-  <meta name="description" content="Курсовая работа, Казань." />
+  <title>Москва как географический объект</title>
+  <meta name="description" content="Курсовая работа." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -36,6 +36,7 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 150px;
     }
 
     body {
@@ -103,31 +104,34 @@
     }
 
     .topbar__inner {
-      min-height: 76px;
+      min-height: 64px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      gap: 16px;
+      padding: 10px 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       font-weight: 800;
       letter-spacing: 0.03em;
+      flex: 0 0 auto;
+      min-width: fit-content;
     }
 
     .brand__mark {
-      width: 46px;
-      height: 46px;
-      border-radius: 15px;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
       display: grid;
       place-items: center;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       color: #07101d;
       font-weight: 900;
       box-shadow: 0 14px 30px rgba(89, 195, 255, 0.28);
+      flex: 0 0 auto;
     }
 
     .brand__text {
@@ -136,24 +140,41 @@
     }
 
     .brand__title {
-      font-size: 1rem;
+      font-size: 0.98rem;
+      white-space: nowrap;
+    }
+
+    .nav-wrap {
+      min-width: 0;
+      flex: 1 1 auto;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .nav-wrap::-webkit-scrollbar {
+      display: none;
     }
 
     .nav {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      gap: 8px;
+      min-width: max-content;
+      white-space: nowrap;
+      padding-bottom: 2px;
     }
 
     .nav a {
-      padding: 10px 14px;
+      padding: 9px 13px;
       border-radius: 999px;
       color: var(--muted);
       transition: 0.25s ease;
       border: 1px solid transparent;
-      font-size: 0.94rem;
+      font-size: 0.92rem;
       font-weight: 500;
+      flex: 0 0 auto;
     }
 
     .nav a:hover {
@@ -376,6 +397,7 @@
     .section-card {
       border-radius: var(--radius-xl);
       padding: 32px;
+      scroll-margin-top: 150px;
     }
 
     .section-head {
@@ -520,18 +542,33 @@
     }
 
     @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 138px;
+      }
+
       .topbar {
         top: 64px;
       }
 
       .topbar__inner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 14px 0;
+        min-height: 56px;
+        padding: 8px 0;
+        gap: 12px;
       }
 
-      .nav {
-        justify-content: center;
+      .brand__mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+      }
+
+      .brand__title {
+        font-size: 0.9rem;
+      }
+
+      .nav a {
+        padding: 8px 12px;
+        font-size: 0.88rem;
       }
 
       .hero {
@@ -544,6 +581,10 @@
       .sidebar {
         padding: 22px;
         border-radius: 22px;
+      }
+
+      .section-card {
+        scroll-margin-top: 138px;
       }
 
       .hero__stats,
@@ -583,12 +624,14 @@
         </div>
       </a>
 
-      <nav class="nav">
-        <a href="#about">Объект</a>
-        <a href="#history">История</a>
-        <a href="#geography">География</a>
-        <a href="#relief">Рельеф</a>
-      </nav>
+      <div class="nav-wrap">
+        <nav class="nav">
+          <a href="#about">Объект</a>
+          <a href="#history">История</a>
+          <a href="#geography">География</a>
+          <a href="#relief">Рельеф</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -596,10 +639,10 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <div class="hero__eyebrow">Город</div>
-          <h1>Казань</h1>
+          <div class="hero__eyebrow">Город федерального значения • Столица Российской Федерации</div>
+          <h1>Москва</h1>
           <p class="hero__lead">
-            Казань является крупным городом России и столицей Республики Татарстан. Город расположен в среднем течении Волги, вблизи места впадения реки Казанки, и выполняет административные, транспортные, научные, культурные и промышленные функции.
+            Москва - населённый пункт на территории России, имеющий статус города и, в разные периоды времени, статус столицы российских государств, в частности - современная столица Российской Федерации. Город впервые упоминается в связи с князем Юрием Долгоруким и существует как минимум с 1147 года.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#about">Открыть описание</a>
@@ -613,30 +656,30 @@
             </div>
             <div class="stat">
               <div class="stat__label">Статус</div>
-              <div class="stat__value">Столица республики</div>
+              <div class="stat__value">Столица</div>
             </div>
             <div class="stat">
-              <div class="stat__label">Основание</div>
-              <div class="stat__value">Конец XIII века</div>
+              <div class="stat__label">Первое упоминание</div>
+              <div class="stat__value">1147 год</div>
             </div>
             <div class="stat">
               <div class="stat__label">Средняя высота</div>
-              <div class="stat__value">Около 105 м</div>
+              <div class="stat__value">156 м</div>
             </div>
           </div>
         </div>
 
         <div class="hero__media">
           <div class="hero__photo">
-            <img src="https://moya-planeta.ru/upload/images/xl/da/2d/da2d7092be1283dbd495e4f5e0d082ad0100b081.jpg" alt="Вид на Казань" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/View_of_Moscow1.jpg" alt="Панорамный вид на Москву" />
             <div class="hero__caption">
               <div class="hero__caption-box">
                 <small>Географический объект</small>
-                <strong>Казань</strong>
+                <strong>Москва</strong>
               </div>
               <div class="hero__caption-box">
-                <small>Положение</small>
-                <strong>Волга и Казанка</strong>
+                <small>Ландшафт</small>
+                <strong>Центр Европейской России</strong>
               </div>
             </div>
           </div>
@@ -651,16 +694,16 @@
             <h2>Общая характеристика</h2>
           </div>
           <p>
-            Казань относится к числу крупнейших городов России и является важным центром Поволжья. Город имеет значительное административное, хозяйственное, транспортное, научное и культурное значение.
+            Москва - населённый пункт на территории России, имеющий статус города и, в разные периоды времени, статус столицы российских государств, в частности - современная столица Российской Федерации.
           </p>
           <p>
-            Его территориальное положение на Волге способствует развитию межрегиональных связей и определяет роль города в системе расселения средней полосы европейской части страны. Городская территория сочетает исторически сложившиеся и современные функциональные зоны.
+            Город относится к числу важнейших политических, культурных, исторических и административных центров страны. Современная Москва представляет собой крупнейший узел расселения, транспорта и государственного управления.
           </p>
           <div class="chips">
             <div class="chip">Россия</div>
-            <div class="chip">Поволжье</div>
+            <div class="chip">Столица</div>
             <div class="chip">Город</div>
-            <div class="chip">Волга</div>
+            <div class="chip">Исторический центр</div>
           </div>
         </section>
 
@@ -669,10 +712,10 @@
             <h2>История</h2>
           </div>
           <p>
-            Формирование Казани относится к позднему средневековью. Историческое развитие города было связано с выгодным положением на водных путях и с его функциями административного и торгового центра.
+            Москва впервые упоминается в связи с князем Юрием Долгоруким и существует как минимум с 1147 года. Эта дата традиционно рассматривается как важная историческая точка отсчёта в развитии города.
           </p>
           <p>
-            В последующие периоды Казань развивалась как крупный городской центр Поволжья. Исторические процессы оказали заметное влияние на планировочную структуру, культурный ландшафт и пространственную организацию территории.
+            В различные периоды исторического развития Москва имела статус столицы русских государств, а в настоящее время является столицей Российской Федерации.
           </p>
         </section>
 
@@ -681,20 +724,20 @@
             <h2>Географическое положение</h2>
           </div>
           <p>
-            Казань расположена в центре европейской части России, на левом берегу Волги, в районе впадения реки Казанки. Такое положение определяет её значение как важного транспортного и территориального узла.
+            Москва расположена в центре европейской части России и Восточно-Европейской равнины, в междуречье Оки и Волги. Такое положение делает город одним из важнейших пространственных центров страны.
           </p>
           <p>
-            Город находится в пределах волжской долинной системы и прилегающих возвышенных участков. Географическая среда характеризуется сочетанием речных долин, террасированных поверхностей и расчленённых форм рельефа.
+            Город находится в пределах равнинной территории, для которой характерны низменные равнины и пологие холмы. Москва-река, протекающая через северную треть города, играет важную роль в формировании городского ландшафта.
           </p>
 
           <div class="info-grid">
             <div class="info-box">
-              <h4>Речное положение</h4>
-              <p>Город связан с долиной Волги и устьевой частью реки Казанки, что определяет особенности его планировки и транспортных связей.</p>
+              <h4>Равнинная основа</h4>
+              <p>Город расположен на обширной Восточно-Европейской равнине, где преобладают плавные формы рельефа.</p>
             </div>
             <div class="info-box">
-              <h4>Региональная роль</h4>
-              <p>Казань занимает важное место в системе расселения и хозяйственных связей Поволжья.</p>
+              <h4>Речная сеть</h4>
+              <p>Москва-река является ключевым природным элементом городской территории и важной частью её пространственной структуры.</p>
             </div>
           </div>
         </section>
@@ -704,10 +747,10 @@
             <h2>Рельеф</h2>
           </div>
           <p>
-            Рельеф Казани в целом равнинно-возвышенный. В пределах городской территории наблюдается сочетание низких речных участков, склонов и более высоких водораздельных поверхностей.
+            Рельеф Москвы относительно плоский, со средней высотой 156 метров над уровнем моря. Наивысшая точка - Теплостанская возвышенность, достигающая 255 метров.
           </p>
           <p>
-            Средние абсолютные высоты составляют около 105 метров над уровнем моря. Поверхность города расчленена долинами малых водотоков, оврагами и понижениями, что придаёт рельефу неоднородный характер.
+            Наиболее низкие участки приурочены к долинам рек и локальным понижениям поверхности. Общий характер рельефа определяется сочетанием равнинных пространств, слабоволнистых форм и речных долин.
           </p>
         </section>
       </div>
@@ -717,7 +760,7 @@
         <div class="fact-list">
           <div class="fact-item">
             <div class="fact-item__name">Название</div>
-            <div class="fact-item__value">Казань</div>
+            <div class="fact-item__value">Москва</div>
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Тип объекта</div>
@@ -729,23 +772,23 @@
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Статус</div>
-            <div class="fact-item__value">Столица Республики Татарстан</div>
+            <div class="fact-item__value">Современная столица Российской Федерации</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Основание</div>
-            <div class="fact-item__value">Конец XIII века</div>
+            <div class="fact-item__name">Первое упоминание</div>
+            <div class="fact-item__value">1147 год</div>
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Средняя высота</div>
-            <div class="fact-item__value">Около 105 м над уровнем моря</div>
+            <div class="fact-item__value">156 м над уровнем моря</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Реки</div>
-            <div class="fact-item__value">Волга и Казанка</div>
+            <div class="fact-item__name">Высшая точка</div>
+            <div class="fact-item__value">Теплостанская возвышенность, 255 м</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Положение</div>
-            <div class="fact-item__value">Среднее Поволжье</div>
+            <div class="fact-item__name">Река</div>
+            <div class="fact-item__value">Москва-река</div>
           </div>
         </div>
       </aside>
@@ -753,7 +796,7 @@
 
     <section class="footer-title">
       <div class="container footer-title__inner">
-        <div class="footer-title__name">КАЗАНЬ</div>
+        <div class="footer-title__name">МОСКВА</div>
       </div>
     </section>
   </main>

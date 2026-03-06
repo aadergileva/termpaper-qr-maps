@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Казань как географический объект</title>
-  <meta name="description" content="Курсовая работа, Казань." />
+  <title>Курсовая работа</title>
+  <meta name="description" content="Курсовая работа" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -67,35 +67,9 @@
       margin: 0 auto;
     }
 
-    .project-badge {
-      position: sticky;
-      top: 0;
-      z-index: 200;
-      backdrop-filter: blur(18px);
-      background: rgba(5, 12, 24, 0.82);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .project-badge__inner {
-      min-height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    .project-badge__title {
-      font-size: clamp(0.9rem, 1.6vw, 1.08rem);
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #f4f8ff;
-    }
-
     .topbar {
       position: sticky;
-      top: 64px;
+      top: 0;
       z-index: 190;
       backdrop-filter: blur(18px);
       background: rgba(8, 16, 31, 0.72);
@@ -218,7 +192,7 @@
 
     .hero h1 {
       font-size: clamp(2.4rem, 5vw, 5.2rem);
-      line-height: 0.98;
+      line-height: 1.02;
       letter-spacing: -0.05em;
       margin-bottom: 18px;
       font-weight: 900;
@@ -420,29 +394,12 @@
       font-size: 0.95rem;
     }
 
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .chip {
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #e6eeff;
-      font-size: 0.92rem;
-      font-weight: 500;
-    }
-
     .sidebar {
       border-radius: var(--radius-xl);
       padding: 24px;
       height: fit-content;
       position: sticky;
-      top: 154px;
+      top: 90px;
     }
 
     .sidebar h3 {
@@ -520,10 +477,6 @@
     }
 
     @media (max-width: 760px) {
-      .topbar {
-        top: 64px;
-      }
-
       .topbar__inner {
         flex-direction: column;
         justify-content: center;
@@ -568,18 +521,12 @@
   </style>
 </head>
 <body>
-  <div class="project-badge">
-    <div class="container project-badge__inner">
-      <div class="project-badge__title">Разработка карт и условных знаков на основе систем кодирования для быстрого считывания</div>
-    </div>
-  </div>
-
   <header class="topbar">
     <div class="container topbar__inner">
       <a href="#" class="brand">
         <div class="brand__mark">РФ</div>
         <div class="brand__text">
-          <div class="brand__title">Карта Российской Федерации</div>
+          <div class="brand__title">Курсовая работа</div>
         </div>
       </a>
 
@@ -596,10 +543,10 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <div class="hero__eyebrow">Город</div>
-          <h1>Казань</h1>
+          <div class="hero__eyebrow">Город областного значения</div>
+          <h1>Челябинск как географический объект</h1>
           <p class="hero__lead">
-            Казань является крупным городом России и столицей Республики Татарстан. Город расположен в среднем течении Волги, вблизи места впадения реки Казанки, и выполняет административные, транспортные, научные, культурные и промышленные функции.
+            Челябинск является крупным городом Российской Федерации, административным центром Челябинской области и одним из ведущих промышленных центров Урала. Город основан в 1736 году и занимает важное положение в системе расселения, промышленности, транспорта, науки и культуры.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#about">Открыть описание</a>
@@ -613,30 +560,30 @@
             </div>
             <div class="stat">
               <div class="stat__label">Статус</div>
-              <div class="stat__value">Столица республики</div>
+              <div class="stat__value">Город областного значения</div>
             </div>
             <div class="stat">
               <div class="stat__label">Основание</div>
-              <div class="stat__value">Конец XIII века</div>
+              <div class="stat__value">1736 год</div>
             </div>
             <div class="stat">
-              <div class="stat__label">Средняя высота</div>
-              <div class="stat__value">Около 105 м</div>
+              <div class="stat__label">Высота</div>
+              <div class="stat__value">200 - 250 м</div>
             </div>
           </div>
         </div>
 
         <div class="hero__media">
           <div class="hero__photo">
-            <img src="https://moya-planeta.ru/upload/images/xl/da/2d/da2d7092be1283dbd495e4f5e0d082ad0100b081.jpg" alt="Вид на Казань" />
+            <img src="https://a.d-cd.net/ed5a7f9s-1920.jpg" alt="Вид на Челябинск" />
             <div class="hero__caption">
               <div class="hero__caption-box">
                 <small>Географический объект</small>
-                <strong>Казань</strong>
+                <strong>Челябинск</strong>
               </div>
               <div class="hero__caption-box">
                 <small>Положение</small>
-                <strong>Волга и Казанка</strong>
+                <strong>Долина Миасса</strong>
               </div>
             </div>
           </div>
@@ -651,17 +598,11 @@
             <h2>Общая характеристика</h2>
           </div>
           <p>
-            Казань относится к числу крупнейших городов России и является важным центром Поволжья. Город имеет значительное административное, хозяйственное, транспортное, научное и культурное значение.
+            Челябинск расположен на восточном склоне Уральских гор, на обоих берегах реки Миасс. Он выполняет административные, транспортные, промышленные, научно-образовательные и культурные функции.
           </p>
           <p>
-            Его территориальное положение на Волге способствует развитию межрегиональных связей и определяет роль города в системе расселения средней полосы европейской части страны. Городская территория сочетает исторически сложившиеся и современные функциональные зоны.
+            Город имеет важное значение в территориальной организации Южного Урала. Его географическое положение на границе Урала и Западной Сибири определяет особенности природных условий, хозяйственного профиля и пространственной структуры.
           </p>
-          <div class="chips">
-            <div class="chip">Россия</div>
-            <div class="chip">Поволжье</div>
-            <div class="chip">Город</div>
-            <div class="chip">Волга</div>
-          </div>
         </section>
 
         <section class="section-card" id="history">
@@ -669,10 +610,10 @@
             <h2>История</h2>
           </div>
           <p>
-            Формирование Казани относится к позднему средневековью. Историческое развитие города было связано с выгодным положением на водных путях и с его функциями административного и торгового центра.
+            Челябинск основан в 1736 году как крепость на месте башкирского поселения Челяба. На раннем этапе развития он выполнял военно-административные и транзитные функции.
           </p>
           <p>
-            В последующие периоды Казань развивалась как крупный городской центр Поволжья. Исторические процессы оказали заметное влияние на планировочную структуру, культурный ландшафт и пространственную организацию территории.
+            В дальнейшем город развивался как крупный торговый, промышленный и транспортный центр. Историческое развитие Челябинска оказало заметное влияние на его современную функциональную структуру и городской облик.
           </p>
         </section>
 
@@ -681,20 +622,20 @@
             <h2>Географическое положение</h2>
           </div>
           <p>
-            Казань расположена в центре европейской части России, на левом берегу Волги, в районе впадения реки Казанки. Такое положение определяет её значение как важного транспортного и территориального узла.
+            Челябинск расположен на восточном склоне Уральских гор, к югу от Екатеринбурга, в переходной зоне между Уралом и Западной Сибирью. Город занимает выгодное транспортно-географическое положение в пределах важнейших межрегиональных связей.
           </p>
           <p>
-            Город находится в пределах волжской долинной системы и прилегающих возвышенных участков. Географическая среда характеризуется сочетанием речных долин, террасированных поверхностей и расчленённых форм рельефа.
+            Географическое положение города связано с долиной реки Миасс, системой озёр и Шершнёвским водохранилищем. Такое сочетание природных условий определяет специфику планировки, водообеспечения и территориального развития города.
           </p>
 
           <div class="info-grid">
             <div class="info-box">
               <h4>Речное положение</h4>
-              <p>Город связан с долиной Волги и устьевой частью реки Казанки, что определяет особенности его планировки и транспортных связей.</p>
+              <p>Город расположен на реке Миасс и связан с системой городских озёр и водохранилищ.</p>
             </div>
             <div class="info-box">
-              <h4>Региональная роль</h4>
-              <p>Казань занимает важное место в системе расселения и хозяйственных связей Поволжья.</p>
+              <h4>Пограничное положение</h4>
+              <p>Территория города находится на контакте природных структур Урала и Западной Сибири.</p>
             </div>
           </div>
         </section>
@@ -704,10 +645,10 @@
             <h2>Рельеф</h2>
           </div>
           <p>
-            Рельеф Казани в целом равнинно-возвышенный. В пределах городской территории наблюдается сочетание низких речных участков, склонов и более высоких водораздельных поверхностей.
+            Рельеф Челябинска в целом слабо холмистый. Западная часть города имеет более повышенный характер поверхности, тогда как к востоку наблюдается постепенное понижение рельефа.
           </p>
           <p>
-            Средние абсолютные высоты составляют около 105 метров над уровнем моря. Поверхность города расчленена долинами малых водотоков, оврагами и понижениями, что придаёт рельефу неоднородный характер.
+            Городская территория расчленена долиной реки Миасс, ложбинами, озёрными котловинами и заболоченными участками. Высоты в пределах города составляют примерно 200 - 250 м над уровнем моря.
           </p>
         </section>
       </div>
@@ -717,7 +658,7 @@
         <div class="fact-list">
           <div class="fact-item">
             <div class="fact-item__name">Название</div>
-            <div class="fact-item__value">Казань</div>
+            <div class="fact-item__value">Челябинск</div>
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Тип объекта</div>
@@ -728,24 +669,32 @@
             <div class="fact-item__value">Россия</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Статус</div>
-            <div class="fact-item__value">Столица Республики Татарстан</div>
+            <div class="fact-item__name">Административный статус</div>
+            <div class="fact-item__value">Город областного значения</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__name">Муниципальное образование</div>
+            <div class="fact-item__value">Челябинский городской округ</div>
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Основание</div>
-            <div class="fact-item__value">Конец XIII века</div>
+            <div class="fact-item__value">1736 год</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Средняя высота</div>
-            <div class="fact-item__value">Около 105 м над уровнем моря</div>
+            <div class="fact-item__name">Население</div>
+            <div class="fact-item__value">1 176 770 человек</div>
           </div>
           <div class="fact-item">
-            <div class="fact-item__name">Реки</div>
-            <div class="fact-item__value">Волга и Казанка</div>
+            <div class="fact-item__name">Высота</div>
+            <div class="fact-item__value">200 - 250 м над уровнем моря</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__name">Гидрографическая основа</div>
+            <div class="fact-item__value">Река Миасс</div>
           </div>
           <div class="fact-item">
             <div class="fact-item__name">Положение</div>
-            <div class="fact-item__value">Среднее Поволжье</div>
+            <div class="fact-item__value">Южный Урал</div>
           </div>
         </div>
       </aside>
@@ -753,7 +702,7 @@
 
     <section class="footer-title">
       <div class="container footer-title__inner">
-        <div class="footer-title__name">КАЗАНЬ</div>
+        <div class="footer-title__name">ЧЕЛЯБИНСК</div>
       </div>
     </section>
   </main>
